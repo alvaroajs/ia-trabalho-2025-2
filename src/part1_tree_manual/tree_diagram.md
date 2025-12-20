@@ -5,9 +5,9 @@ flowchart TD
     %% --- BLOCO 1: ABERTURA OCULAR ---
     subgraph Ocular [1. Abertura Ocular]
         direction TB
-        Q1{"Abre os olhos\nespontaneamente?"}
-        Q2{"Abre os olhos\nao comando verbal?"}
-        Q3{"Abre os olhos\nà pressão/dor?"}
+        Q1{"Abre os olhos espontaneamente?"}
+        Q2{"Abre os olhos nao comando verbal?"}
+        Q3{"Abre os olhos nà pressão a dor?"}
         
         Q1 -- Sim --> AO4(Pontuação: 4)
         Q1 -- Não --> Q2
@@ -22,10 +22,10 @@ flowchart TD
     %% --- BLOCO 2: RESPOSTA VERBAL ---
     subgraph Verbal [2. Resposta Verbal]
         direction TB
-        Q4{"O paciente está\norientado e conversa?"}
-        Q5{"A conversa é\nconfusa?"}
-        Q6{"Usa palavras\ninapropriadas?"}
-        Q7{"Emite sons\nininteligíveis?"}
+        Q4{"O paciente está orientado e conversa?"}
+        Q5{"A conversa é confusa?"}
+        Q6{"Usa palavras inapropriadas?"}
+        Q7{"Emite sons ininteligíveis?"}
 
         Q4 -- Sim --> RV5(Pontuação: 5)
         Q4 -- Não --> Q5
@@ -42,11 +42,11 @@ flowchart TD
     %% --- BLOCO 3: RESPOSTA MOTORA ---
     subgraph Motora [3. Resposta Motora]
         direction TB
-        Q8{"Obedece a\ncomandos?"}
-        Q9{"Localiza o\nestímulo doloroso?"}
-        Q10{"Flexão normal\n(movimento de retirada)?"}
-        Q11{"Flexão anormal\n(decorticação)?"}
-        Q12{"Extensão anormal\n(descerebração)?"}
+        Q8{"Obedece a comandos?"}
+        Q9{"Localiza o estímulo doloroso?"}
+        Q10{"Flexão normal (movimento de retirada)?"}
+        Q11{"Flexão anormal (decorticação)?"}
+        Q12{"Extensão anormal (descerebração)?"}
 
         Q8 -- Sim --> RM6(Pontuação: 6)
         Q8 -- Não --> Q9
