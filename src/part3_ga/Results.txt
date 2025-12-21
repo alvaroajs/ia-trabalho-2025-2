@@ -1,0 +1,37 @@
+
+SVM:
+    Acurácia: 0.64
+    Cross-validation scores: [0.67391304 0.75362319 0.63768116 0.72992701 0.71532847]
+    Mean cross-validation score: 0.70
+    Acurácia com cross-validation: 0.66
+KNN:
+    Melhor k (CV no treino): 17
+    Acurácia:  0.73
+    Precisão:  0.75 (binary)
+    Recall:    0.75 (binary )
+
+    Relatório de Classificação:
+                precision    recall  f1-score   support
+
+            0       0.70      0.70      0.70        82
+            1       0.75      0.75      0.75       102
+
+        accuracy                           0.73       184
+    macro avg       0.73      0.73      0.73       184
+    weighted avg       0.73      0.73      0.73       184
+Desicion Tree:
+    Acurácia:  0.76
+    Precisão:  0.81
+    Recall:    0.75
+
+    Relatório de Classificação:
+                precision    recall  f1-score   support
+
+            0       0.71      0.78      0.74        82
+            1       0.81      0.75      0.78       102
+
+        accuracy                           0.76       184
+    macro avg       0.76      0.76      0.76       184
+    weighted avg       0.77      0.76      0.76       184
+
+
