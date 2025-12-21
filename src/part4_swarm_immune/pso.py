@@ -2,10 +2,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # ================= 1. CONFIGURAÇÃO DO CENÁRIO =================
-NUM_ANTENAS = 6
-RAIO_COBERTURA = 15
+NUM_ANTENAS = 10
+RAIO_COBERTURA = 30
 AREA_SIZE = 100
-NUM_CLIENTES = 60
+NUM_CLIENTES = 80
 
 
 MARGEM = 10  

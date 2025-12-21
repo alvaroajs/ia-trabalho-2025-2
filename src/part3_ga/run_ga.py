@@ -43,6 +43,7 @@ def criar_individuo():
     return np.random.uniform(-RAIO_LIMITE, RAIO_LIMITE, N_ANTENAS_MAX * 3)
 
 def plotar_resultado(melhor_ind, score):
+    import os
     antenas = melhor_ind.reshape(-1, 3)
     ativas = antenas[antenas[:, 2] > 0.5]
     
@@ -69,7 +70,12 @@ def plotar_resultado(melhor_ind, score):
     plt.legend(loc='upper right')
     plt.grid(True, alpha=0.3)
     plt.axis('equal')
-    plt.show()
+    
+    # Salvar gráfico em arquivo
+    output_path = os.path.join(os.path.dirname(__file__), 'distribuicao_antenas.png')
+    plt.savefig(output_path, dpi=150, bbox_inches='tight')
+    print(f"Gráfico salvo em: {output_path}")
+    plt.close()
 
 if __name__ == "__main__":
     ag = GA(pop_size=100, cx_rate=0.8, mut_rate=0.2, 
